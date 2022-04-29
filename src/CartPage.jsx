@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 import Item from "./Item";
 import "./CartPage.scss";
 
-const CartPage = ({ items, onAddOne, onRemoveOne }) => ( {
-
+const CartPage = ({ items, onAddOne, onRemoveOne }) => {
   return (
     <ul className="CartPage-items">
       {items.map((item) => (
@@ -28,9 +27,9 @@ const CartPage = ({ items, onAddOne, onRemoveOne }) => ( {
           </Item>
         </li>
       ))}
-      </ul>
-      )
-}
+    </ul>
+  );
+};
 CartPage.propTypes = {
   items: PropTypes.array.isRequired,
 };
