@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Item.scss";
+import "./Item.css";
 
 const Item = ({ item, children }) => (
   <div className="Item">
@@ -10,7 +10,7 @@ const Item = ({ item, children }) => (
       <div className="Item-description">{item.description}</div>
     </div>
     <div className="Item-right">
-      <div className="Item-price">${item.price}</div>
+      <div className="Item-price">£{item.price}</div>
       {children}
     </div>
   </div>

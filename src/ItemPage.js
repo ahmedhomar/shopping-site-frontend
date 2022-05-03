@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./ItemPage.css";
 import Item from "./Item";
-import "./ItemPage.scss";
-
 const ItemPage = ({ items, onAddToCart }) => {
   return (
     <ul className="ItemPage-items">
@@ -21,5 +20,7 @@ const ItemPage = ({ items, onAddToCart }) => {
     </ul>
   );
 };
-
+ItemPage.propTypes = {
+  items: PropTypes.array.isRequired,
+};
 export default ItemPage;
